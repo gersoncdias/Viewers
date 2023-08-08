@@ -389,7 +389,7 @@ workflows:
           build: yarn test:data
           start: yarn run test:e2e:serve
           spec: 'cypress/integration/**/*'
-          wait-on: 'http://localhost:3000'
+          wait-on: 'http://localhost:4000'
           cache-key: 'yarn-packages-{{ checksum "yarn.lock" }}'
           no-workspace: true # Don't persist workspace
           post-steps:

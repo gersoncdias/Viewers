@@ -9,7 +9,7 @@ Depending on whether or not you want uploaded studies to persist in Orthanc afte
 This command will start an instance of the jodogne/orthanc-plugins Docker image. *All data will be removed when the instance is stopped!*
 
 ````
-docker run --rm -p 4242:4242 -p 8042:8042 jodogne/orthanc-plugins
+docker run --rm -p 4244:4244 -p 8044:8044 jodogne/orthanc-plugins
 ````
 
 ## Persistent data storage
@@ -30,7 +30,7 @@ In order to allow your data to persist after the instance is stopped, you first 
 2. Run Orthanc from Docker with the data volume attached
 
     ````
-    docker run --volumes-from sampledata -p 4242:4242 -p 8042:8042 jodogne/orthanc-plugins
+    docker run --volumes-from sampledata -p 4244:4244 -p 8044:8044 jodogne/orthanc-plugins
     ````
 
 3. Upload your data and it will be persisted
